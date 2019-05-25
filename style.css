@@ -1,0 +1,221 @@
+/**************************************  GENERAL  **************************************/
+
+body {
+  color: #1d364d !important;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #00c6ff !important;
+  border: 1px solid #00c6ff !important;
+}
+
+.title-h2 {
+  position: relative;
+  font: bold 36px/40px "Open Sans", Arial, sans-serif;
+}
+
+.title-h2:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 70px;
+  height: 5px;
+  left: 0;
+  bottom: -15px;
+  background: #1d364d;
+  text-align: center;
+  left: 50%;
+  margin-left: -35px;
+}
+
+.nav-fixed {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid #e3e5e7;
+  padding: 20px 0 10px 0;
+}
+
+/**************************************  HEADER  **************************************/
+.header {
+  border-bottom: 1px solid #e3e5e7;
+}
+
+.header img {
+  width: 400px;
+  height: 160px;
+}
+
+@media (max-width: 500px) {
+  .header img {
+    width: auto;
+  }
+}
+
+/*****************************************  NAV  *****************************************/
+
+nav > ul {
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > .nav-list > li > a {
+  font: bold 14px/24px "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #3e3a3b;
+  transition: 0.3s all ease;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #00c6ff;
+}
+
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #00c6ff;
+  height: 5px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .nav-list {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/*****************************************  CAROUSEL  *****************************************/
+
+.carousel {
+  background-image: url("./img/carousel2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.carousel .form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: absolute;
+  top: 90%;
+  border: 1px solid #e3e5e7;
+}
+
+/*****************************************  ROOMS  *****************************************/
+
+.rooms {
+  margin-top: 150px;
+}
+
+.rooms-title {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.rooms-content a {
+  text-decoration: none;
+  color: #00c6ff;
+}
+
+@media (max-width: 993px) {
+  .rooms {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 766px) {
+  .rooms {
+    margin-top: 450px;
+  }
+}
+
+/*****************************************  ABOUT US  *****************************************/
+
+.about-us img {
+  width: 160px;
+  height: 160px;
+}
+/*****************************************  BOOK NOW  *****************************************/
+
+.wave-backgroung {
+  height: 400px;
+  background-image: url("./img/book-now.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*****************************************  PEOPLE SAYS  *****************************************/
+.people-says {
+  margin: 100px 0;
+}
+
+/*****************************************  FOOTER  *****************************************/
+
+.footer {
+  background-color: #1d364d;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social a {
+  font-size: 18px;
+  padding: 10px;
+}
+
+footer input {
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  padding: 10px 20px !important;
+}
+
+footer button {
+  top: 0;
+  right: 0;
+  background: none;
+  color: #fff;
+  padding: 10px 30px !important;
+}
+
+.yellow {
+  color: #f5bc6b;
+}

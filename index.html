@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Surf Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/all.css">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <header class="header d-flex justify-content-center align-items-center">
+        <img src="./img/logo.png" alt="logo">
+    </header>
+
+    <div class="container py-3">
+        <nav class="d-flex justify-content-center">
+            <ul class="nav-list list-unstyled">
+                <li><a class="pb-4" href="#">Home</a></li>
+                <li><a class="pb-4" href="#">About</a></li>
+                <li><a class="pb-4" href="#">Galery</a></li>
+                <li><a class="pb-4" href="#">Contact</a></li>
+                <li><button class="btn btn-primary">BOOK NOW</button></li>
+            </ul>
+            <div class="mobile-nav">
+                <select>
+                    <option value="">Home</option>
+                    <option value="">About</option>
+                    <option value="">Galery</option>
+                    <option value="">Contact</option>
+                </select>
+                <button class="btn btn-primary">BOOK NOW</button>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="carousel d-flex justify-content-center position-relative">
+        <div class="form container aos-init aos-animate" data-aos="fade-up" data-aos-offset="-200">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                    <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+                    <div class="field-icon-wrap">
+                        <input type="date" id="checkin_date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                    <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+                    <div class="field-icon-wrap">
+                        <input type="date" id="checkout_date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                    <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="adults" class="font-weight-bold text-black">Adults</label>
+                            <div class="field-icon-wrap">
+                                <select name="" id="adults" class="form-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="children" class="font-weight-bold text-black">Children</label>
+                            <div class="field-icon-wrap">
+                                <select name="" id="children" class="form-control">
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 align-self-end">
+                    <button class="btn btn-primary btn-block">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rooms">
+        <div class="rooms-title text-center text-uppercase font-weight-bold my-5">
+            <h2 class="title-h2">Our rooms</h2>
+            <p class="mt-5">Fusce euismod consequat ante. Lorem ipsum dolor
+                sit amet,
+                consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris
+                accumsan nulla <br>vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede
+                mi, aliquet sit amet, euismod in, <br>auctor ut, ligula. Aliquam dapibus tincidunt metus.
+                Praesent justo dolor, lobortis quis, lobortis dignissim,</p>
+        </div>
+    </div>
+
+    <div class="rooms-content container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
+                <img src="./img/room2.jpg" alt="image" style="height: 400px">
+                <a href="#" class="font-weight-bold">DOUBLE ROOM</a>
+                <div><span class="font-weight-bold">$380</span><span>/NIGHT</span></div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
+                <img src="./img/room1.jpg" alt="image" style="height: 400px">
+                <a href="#" class="font-weight-bold">SINGLE ROOM</a>
+                <div><span class="font-weight-bold">$200</span><span>/NIGHT</span></div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
+                <img src="./img/room3.jpg" alt="image" style="height: 400px">
+                <a href="#" class="font-weight-bold">EXECUTIVE ROOM</a>
+                <div><span class="font-weight-bold">$450</span><span>/NIGHT</span></div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 d-flex flex-column">
+                <img src="./img/room4.jpg" alt="image" style="height: 400px">
+                <a href="">VIP SUITE</a>
+                <div><span>$620</span><span>/NIGHT</span></div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="about-us container my-5">
+        <h2 class="title-h2 text-center text-uppercase">About us</h2>
+        <div class="row mt-5">
+            <div class="col-md-6 col-sm-12 text-center">
+                <img src="./img/surf-school.png" alt="surf-school">
+                <h3 class="font-weight-bold my-4">SURF SCHOOLS</h3>
+                <p>Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus
+                    ut
+                    enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut,
+                    ligula.
+                    Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar
+                    ac,
+                    lorem. Vestibulum sed ante. Donec sagittis euismod purus. fermentum nisl. Mauris accumsan nulla vel
+                    diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+                <img src="./img/surf-resort.png" alt="surf-resort">
+                <h3 class="font-weight-bold my-4">SURF RESORT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue
+                    fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla
+                    venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt
+                    metus.
+                    Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante.
+                    Donec
+                    sagittis euismod purus.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wave-backgroung"></div>
+
+    <div class="people-says container">
+        <h2 class="title-h2 text-center text-uppercase">People says</h2>
+        <div class="row">
+            <div class="review text-center col-md-4 col-sm-12 mt-5">
+                <p>“A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a paradisematic country, in which roasted parts of sentences fly into your mouth.”</p>
+                <p><em>— Jean Smith</em></p>
+            </div>
+            <div class="review text-center col-md-4 col-sm-12 mt-5">
+                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+                    life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the
+                    far World of Grammar.”</p>
+                <p><em>— John Doe</em></p>
+            </div>
+            <div class="review text-center col-md-4 col-sm-12 mt-5">
+                <p>“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                    her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
+                    Line Lane.”</p>
+                <p><em>— John Doe</em></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3 mb-5">
+                    <ul class="list-unstyled link">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Rooms</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <ul class="list-unstyled link">
+                        <li><a href="#">The Rooms &amp; Suites</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5 pr-md-5 contact-info">
+                    <p><span class="d-block"><i class="icon ion-md-pin mr-3 yellow"></i>Address:</span>
+                        <span> 198 West 21th Street, <br> Suite 721 New York NY 10016</span></p>
+                    <p><span class="d-block"><i class="icon ion-md-call mr-3 yellow"></i>Phone:</span>
+                        <span> (+1) 435 3533</span></p>
+                    <p><span class="d-block"><i class="icon ion-md-mail mr-3 yellow"></i>Email:</span>
+                        <span> info@domain.com</span></p>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <p>Sign up for our newsletter</p>
+                    <form action="#" class="footer-newsletter position-relative">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email...">
+                            <button type="submit" class="btn position-absolute"><span
+                                    class="fa fa-paper-plane"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <p class="col-md-6 text-left">
+                    Copyright ©
+                    2019 All rights
+                    reserved | <i class="fa fa-heart" aria-hidden="true"></i>
+                </p>
+
+                <p class="col-md-6 text-right social">
+                    <a href="#"><span class="fab fa-tripadvisor"></span></a>
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    <a href="#"><span class="fab fa-vimeo-v"></span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/axios/axios.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib//font-awesome/js/fontawesome.js"></script>
+
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() >= 245) {
+                $('nav').addClass('nav-fixed');
+            } else
+                $('nav').removeClass('nav-fixed');
+        });
+
+
+    </script>
+
+</body>
+
+</html>
