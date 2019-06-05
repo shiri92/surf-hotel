@@ -29,17 +29,6 @@ body {
   margin-left: -35px;
 }
 
-.nav-fixed {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
-  border-bottom: 1px solid #e3e5e7;
-  padding: 20px 0 10px 0;
-}
-
 /**************************************  HEADER  **************************************/
 .header {
   border-bottom: 1px solid #e3e5e7;
@@ -58,6 +47,13 @@ body {
 
 /*****************************************  NAV  *****************************************/
 
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid #e3e5e7;
+}
 nav > ul {
   width: 650px;
   display: flex;
@@ -96,7 +92,7 @@ nav ul li a:after {
   background: #00c6ff;
   height: 5px;
 }
-nav ul li a:hover:after {
+nav ul li:not(:last-child) a:hover:after {
   width: 100%;
 }
 
@@ -113,9 +109,9 @@ nav ul li a:hover:after {
   }
 }
 
-/*****************************************  CAROUSEL  *****************************************/
+/*****************************************  BOOK NOW  *****************************************/
 
-.carousel {
+.book-now {
   background-image: url("./img/carousel2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +119,7 @@ nav ul li a:hover:after {
   height: 600px;
 }
 
-.carousel .form {
+.book-now .form {
   background-color: white;
   border-radius: 10px;
   padding: 30px;
@@ -192,6 +188,12 @@ nav ul li a:hover:after {
 
 .footer a {
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none !important;
+  transition: 0.3s all ease;
+}
+
+.footer a:hover {
+  color: rgba(150, 142, 142, 0.7);
 }
 
 .social a {
@@ -218,4 +220,31 @@ footer button {
 
 .yellow {
   color: #f5bc6b;
+}
+
+/*****************************************  ROOMS POSSIBILITY  *****************************************/
+
+.rooms-possibility {
+  margin-top: 150px;
+}
+
+@media (max-width: 993px) {
+  .rooms-possibility {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 766px) {
+  .rooms-possibility {
+    margin-top: 450px;
+  }
+}
+
+.rooms-possibility img {
+  width: 400px;
+  height: 300px;
+}
+
+.possibility {
+  border: 1px solid #e3e5e7;
 }

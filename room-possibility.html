@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="./lib/font-awesome/css/all.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
-
     <header class="header d-flex justify-content-center align-items-center">
         <img src="./img/logo.png" alt="logo">
     </header>
@@ -23,11 +21,11 @@
     <div class="nav-bar py-3">
         <nav class="d-flex justify-content-center">
             <ul class="nav-list list-unstyled">
-                <li><a class="pb-4" href="#">Home</a></li>
+                <li><a class="pb-4" href="index.html">Home</a></li>
                 <li><a class="pb-4" href="#">About</a></li>
                 <li><a class="pb-4" href="#">Galery</a></li>
                 <li><a class="pb-4" href="#">Contact</a></li>
-                <li><a href="room-possibility.html"><button class="btn btn-primary">BOOK NOW</button></a></li>
+                <li><button class="btn btn-primary">BOOK NOW</button></li>
             </ul>
             <div class="mobile-nav">
                 <select>
@@ -36,7 +34,7 @@
                     <option value="">Galery</option>
                     <option value="">Contact</option>
                 </select>
-                <a href="room-possibility.html"><button class="btn btn-primary">BOOK NOW</button></a>
+                <button class="btn btn-primary">BOOK NOW</button>
             </div>
         </nav>
     </div>
@@ -84,104 +82,44 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 align-self-end">
-                    <button class="btn btn-primary btn-block">BOOK NOW</button>
+                    <button class="btn btn-primary btn-block">SEARCH</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="rooms">
-        <div class="rooms-title text-center text-uppercase font-weight-bold my-5">
-            <h2 class="title-h2">Our rooms</h2>
-            <p class="mt-5">Fusce euismod consequat ante. Lorem ipsum dolor
-                sit amet,
-                consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris
-                accumsan nulla <br>vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede
-                mi, aliquet sit amet, euismod in, <br>auctor ut, ligula. Aliquam dapibus tincidunt metus.
-                Praesent justo dolor, lobortis quis, lobortis dignissim,</p>
-        </div>
-    </div>
-
-    <div class="rooms-content container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
-                <img src="./img/room2.jpg" alt="image" style="height: 400px">
-                <a href="#" class="font-weight-bold">DOUBLE ROOM</a>
-                <div><span class="font-weight-bold">$380</span><span>/NIGHT</span></div>
+    <div class="rooms-possibility container">
+        <div class="possibility my-5 d-flex justify-content-between">
+            <div class="d-flex">
+                <img src="./img/room5.jpg" alt="room">
+                <div class="description p-4">
+                    <h3>Double Room with Terrace</h3>
+                    <p><a href="#">More Information</a></p>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
-                <img src="./img/room1.jpg" alt="image" style="height: 400px">
-                <a href="#" class="font-weight-bold">SINGLE ROOM</a>
-                <div><span class="font-weight-bold">$200</span><span>/NIGHT</span></div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex flex-column mb-5">
-                <img src="./img/room3.jpg" alt="image" style="height: 400px">
-                <a href="#" class="font-weight-bold">EXECUTIVE ROOM</a>
-                <div><span class="font-weight-bold">$450</span><span>/NIGHT</span></div>
-            </div>
-            <!-- <div class="col-lg-3 col-md-6 d-flex flex-column">
-                <img src="./img/room4.jpg" alt="image" style="height: 400px">
-                <a href="">VIP SUITE</a>
-                <div><span>$620</span><span>/NIGHT</span></div>
-            </div> -->
-        </div>
-    </div>
-
-    <div class="about-us container my-5">
-        <h2 class="title-h2 text-center text-uppercase">About us</h2>
-        <div class="row mt-5">
-            <div class="col-md-6 col-sm-12 text-center">
-                <img src="./img/surf-school.png" alt="surf-school">
-                <h3 class="font-weight-bold my-4">SURF SCHOOLS</h3>
-                <p>Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus
-                    ut
-                    enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut,
-                    ligula.
-                    Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar
-                    ac,
-                    lorem. Vestibulum sed ante. Donec sagittis euismod purus. fermentum nisl. Mauris accumsan nulla vel
-                    diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis.</p>
-            </div>
-            <div class="col-md-6 col-sm-12 text-center">
-                <img src="./img/surf-resort.png" alt="surf-resort">
-                <h3 class="font-weight-bold my-4">SURF RESORT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue
-                    fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla
-                    venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt
-                    metus.
-                    Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante.
-                    Donec
-                    sagittis euismod purus.</p>
+            <div class="price align-self-center text-right pr-4">
+                <p>From</p>
+                <h3>$116</h3>
+                <p>Cost for 2 nights</p>
             </div>
         </div>
-    </div>
 
-    <div class="wave-backgroung"></div>
-
-    <div class="people-says container">
-        <h2 class="title-h2 text-center text-uppercase">People says</h2>
-        <div class="row">
-            <div class="review text-center col-md-4 col-sm-12 mt-5">
-                <p>“A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                    a paradisematic country, in which roasted parts of sentences fly into your mouth.”</p>
-                <p><em>— Jean Smith</em></p>
+        <div class="possibility my-5 d-flex justify-content-between">
+            <div class="d-flex">
+                <img src="./img/room5.jpg" alt="room">
+                <div class="description p-4">
+                    <h3>Double Room with Terrace</h3>
+                    <p><a href="#">More Information</a></p>
+                </div>
             </div>
-            <div class="review text-center col-md-4 col-sm-12 mt-5">
-                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
-                    life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the
-                    far World of Grammar.”</p>
-                <p><em>— John Doe</em></p>
-            </div>
-            <div class="review text-center col-md-4 col-sm-12 mt-5">
-                <p>“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
-                    her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
-                    Line Lane.”</p>
-                <p><em>— John Doe</em></p>
+            <div class="price align-self-center text-right pr-4">
+                <p>From</p>
+                <h3>$116</h3>
+                <p>Cost for 2 nights</p>
             </div>
         </div>
-    </div>
 
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -253,7 +191,6 @@
         //     } else
         //         $('nav').removeClass('nav-fixed');
         // });
-
 
     </script>
 
